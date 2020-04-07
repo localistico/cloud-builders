@@ -30,4 +30,5 @@ RUN apt-get -y update && \
     # Clean up
     apt-get --purge -y autoremove && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    rm -rf /builder/google-cloud-sdk/.install/.backup
